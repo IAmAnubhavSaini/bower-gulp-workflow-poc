@@ -44,7 +44,25 @@ gulp.task('add-headers', ['fix-template'], function(){
         .pipe(gulp.dest('src/css'));
 });
 
+gulp.task('clean', function(){
+  var generated = ['src/css/site.css', 'src/js/site.js', 'src/template/layout.tpl'];
+  return gulp.src(generated)
+               .pipe(rimraf());
+});
 
+gulp.task('dev', ['clean'], function(){
+  gulp.src('src/templates/layout.src.tpl')
+        .pipe(rename('layout.tpl'))
+        .pipe(gulp.dest('src/templates'));
+
+  gulp.src('bower_components/bootstrap/dist/css/bootstrap.min.css')
+        .pipe(gulp.dest('src/css'));
+
+  gulp.src('bower_components/bootstrap/dist/js/bootstrap.min.js')
+        .pipe(gulp.dest('src/js'));
+
+  gulp.src('bower_components/jquery/dist/jquery.min.js')
+        .pipe(gulp.dest('src/js'));
+
+});
 gulp.task('default', ['minify', 'fix-template', 'fix-paths', 'add-headers']);
-
-
