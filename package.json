@@ -16,7 +16,7 @@
     "gulp",
     "frontend-workflow"
   ],
-  "author": "Anubhav Saini",
+  "author": "Anubhav Saini <IAmAnubhavSaini@GMail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IAmAnubhavSaini/bower-gulp-workflow-poc/issues"
