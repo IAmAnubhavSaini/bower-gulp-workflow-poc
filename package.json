@@ -1,0 +1,28 @@
+{
+  "name": "bower-gulp-workflow-poc",
+  "version": "0.0.1",
+  "description": "POC for FrontEnd WorkFlow using Bower and Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAmAnubhavSaini/bower-gulp-workflow-poc.git"
+  },
+  "keywords": [
+    "POC",
+    "bower",
+    "gulp",
+    "frontend-workflow"
+  ],
+  "author": "Anubhav Saini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IAmAnubhavSaini/bower-gulp-workflow-poc/issues"
+  },
+  "homepage": "https://github.com/IAmAnubhavSaini/bower-gulp-workflow-poc#readme",
+  "devDependencies": {
+    "bower": "^1.7.7"
+  }
+}
